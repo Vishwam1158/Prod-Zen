@@ -27,6 +27,14 @@
             </intent-filter>
         </activity>
 
+        <!-- FIXED: Set a proper full-screen theme for the activity -->
+        <activity
+            android:name=".InterventionActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ProdZen"
+            android:launchMode="singleTask"
+            />
+
         <service
             android:name=".service.ProdZenAccessibilityService"
             android:exported="false"
